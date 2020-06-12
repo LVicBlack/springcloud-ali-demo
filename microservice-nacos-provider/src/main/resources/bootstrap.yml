@@ -1,0 +1,22 @@
+spring:
+  application:
+    # 注册到Nacos上的服务名称
+    name: microservice-nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.76.130.43:8848
+      #配置中心地址
+      config:
+        enabled: true
+        server-addr: 120.76.130.43:8848
+        file-extension: yaml
+        group: Project1
+        namespace: 4a9b1063-5166-42dc-a78f-fb8d4a0dee0e
+        ext-config:
+          - data-id: share-config-common.yml
+            group: Project1
+            refresh: true
+  profiles:
+    active: dev
+

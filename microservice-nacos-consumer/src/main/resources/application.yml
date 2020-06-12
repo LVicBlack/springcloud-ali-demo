@@ -1,0 +1,10 @@
+spring:
+  application:
+    # 注册到Nacos上的服务名称
+    name: microservice-nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.76.130.43:8848
+server:
+  port: 8011

@@ -1,0 +1,9 @@
+spring:
+  application:
+    # 注册到Nacos上的服务名称
+    name: microservice-discovery-nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 120.76.130.43:8848
+

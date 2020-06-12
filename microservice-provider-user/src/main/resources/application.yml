@@ -1,0 +1,16 @@
+server:
+    port: 8021
+spring:
+    application:
+        # 指定注册到nacos server上的服务名称
+        name: microservice-provider-user
+    cloud:
+        nacos:
+            discovery:
+                server-addr: 120.76.130.43:8848
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
